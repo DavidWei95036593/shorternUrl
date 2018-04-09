@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>URL</title>
+  </head>
+  <body>
+
+    <center>
+      <h1>Url</h1>
+      <a href = "{{main_url}}/urls/new_Url">New Url</a>
+    </center>
+    <br>
+
+    <div id="urls">
+      {{#each urls}}
+        <br>
+
+        <div class="url">
+          <p>Original Url: &nbsp;{{original_url}}</p>
+          <br>
+          <p>Shortened Url: <a href="{{original_url}}">{{shortened_url}}</a></p>
+        </div>
+
+        <br>
+      {{/each}}
+    </div>
+
+  </body>
+</html>
